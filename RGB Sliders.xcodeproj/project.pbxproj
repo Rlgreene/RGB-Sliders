@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					0E9BA3521F3904A1009F5E76 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = JDZNWLDE3P;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -260,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JDZNWLDE3P;
 				INFOPLIST_FILE = "RGB Sliders/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Greene.RGB-Sliders";
@@ -272,6 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JDZNWLDE3P;
 				INFOPLIST_FILE = "RGB Sliders/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Greene.RGB-Sliders";
@@ -299,6 +302,7 @@
 				0E9BA3671F3904A1009F5E76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
