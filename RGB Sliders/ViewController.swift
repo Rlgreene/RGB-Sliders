@@ -43,7 +43,20 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+  //this will override the basic function of the segue and give it new properties
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+      //giving the segue function with the name "openColor"
+        if (segue.identifier == "openColor"){
+            
+      //storing a reference to the second viewController
+        let newViewController = segue.destination
+        
+      //this argument sends whatever the value the sliders create and display that on the new viewController
+        newViewController.view.backgroundColor = colorSquare.backgroundColor
+        }
+    }
 
 }
 

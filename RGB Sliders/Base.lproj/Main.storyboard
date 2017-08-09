@@ -52,11 +52,11 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dh-g2-Zxb">
-                                <rect key="frame" x="137" y="433" width="46" height="30"/>
+                                <rect key="frame" x="137" y="433" width="46" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Open"/>
                                 <connections>
-                                    <segue destination="07M-6W-NPa" kind="show" id="eDx-ug-1nx"/>
+                                    <segue destination="07M-6W-NPa" kind="show" identifier="openColor" id="SwS-Wh-6hV"/>
                                 </connections>
                             </button>
                         </subviews>
