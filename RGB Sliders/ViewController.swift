@@ -19,13 +19,19 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //loading the user defaults for each slider(no need to 'synchronize()', retrieiving data not storing)
+        let defaults = UserDefaults.standard
+        redSlider.value = defaults.float(forKey: "red")
+        greenSlider.value = defaults.float(forKey: "green")
+        blueSlider.value = defaults.float(forKey: "blue")
+        
       //giving the colorSquare a one block pixel order
         colorSquare.layer.borderColor = UIColor.black.cgColor //cg stands for 'Core Graphics'
         colorSquare.layer.borderWidth = 1
         
       //so that the app will start with the sliders already taking affect, call the func
         updateBackgroundColor()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     
@@ -37,6 +43,12 @@ class ViewController: UIViewController {
       //changed 'view.' to 'colorSquare.' as to make this func affect the colorSquare, not the viewController
         colorSquare.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: 1)
         
+      //this will save the last color the user sets as the default, saving it for when the app closes
+        let defaults = UserDefaults.standard
+        defaults.set(redSlider.value, forKey: "red")
+        defaults.set(greenSlider.value, forKey: "green")
+        defaults.set(blueSlider.value, forKey: "blue")
+        defaults.synchronize() //this makes sure the data is save immediately
     }
 
     override func didReceiveMemoryWarning() {
